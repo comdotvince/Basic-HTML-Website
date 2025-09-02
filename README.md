@@ -1,6 +1,6 @@
 # Basic HTML Website
 
-> **Project**: https://roadmap.sh/projects/basic-html-website
+> **Project**: https://roadmap.sh/projects/basic-html-website.
 > **Roadmap**: [Frontend Developer Roadmap](https://roadmap.sh/frontend)
 
 A clean, semantic portfolio website built with pure HTML and CSS as part of the roadmap.sh frontend developer learning path. This project demonstrates fundamental web development skills using only vanilla technologies.
