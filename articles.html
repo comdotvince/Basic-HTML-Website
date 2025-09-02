@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Articles - Vince</title>
     <meta
       name="description"
       content="Vince's portfolio showcasing projects and articles on web development."
     />
-    <title>Vince - Frontend Developer</title>
     <style>
       html {
         overflow-y: scroll; /* always reserve space for scrollbar */
@@ -58,7 +58,7 @@
         font-weight: bold;
       }
 
-      .hero {
+      .articles-section {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -66,18 +66,32 @@
         padding: 2rem;
       }
 
-      .content {
+      .article-list {
         display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        gap: 2rem;
-        padding: 2rem;
+        flex-direction: column;
+        gap: 1rem;
+        margin-top: 2rem;
+        width: 100%;
+        max-width: 800px;
+      }
+
+      .article-item {
+        padding: 1.5rem;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        text-align: left;
+      }
+
+      .article-date {
+        color: #666;
+        font-size: 0.9rem;
       }
 
       footer {
         display: flex;
         justify-content: center;
         padding: 1rem;
+        margin-top: auto;
       }
     </style>
   </head>
@@ -99,27 +113,47 @@
     </header>
 
     <main>
-      <section class="hero">
-        <h1>Frontend Developer</h1>
-        <p>HTML only with proper layout, no styling</p>
-      </section>
+      <section class="articles-section">
+        <h1>My Articles</h1>
+        <p>Thoughts on web development and programming</p>
 
-      <section class="content">
-        <article>
-          <h2>Projects</h2>
-          <h3>Youtube Clone</h3>
-        </article>
-        <article>
-          <h2>Education</h2>
-          <h3>Courses I took</h3>
-          <ul>
-            <li>Object Oriented Programming</li>
-            <li>Introduction to Computing</li>
-            <li>Information System</li>
-            <li>Data Structures and Algorithms</li>
-            <li>Discrete Mathematics</li>
-          </ul>
-        </article>
+        <div class="article-list">
+          <article class="article-item">
+            <h3>Getting Started with HTML5 Semantic Elements</h3>
+            <p class="article-date">March 15, 2025</p>
+            <p>
+              Learn how to structure your web pages using semantic HTML elements
+              for better accessibility and SEO.
+            </p>
+          </article>
+
+          <article class="article-item">
+            <h3>CSS Flexbox vs Grid: When to Use Which</h3>
+            <p class="article-date">March 10, 2025</p>
+            <p>
+              A comprehensive guide to understanding the differences between
+              Flexbox and CSS Grid layouts.
+            </p>
+          </article>
+
+          <article class="article-item">
+            <h3>Building Responsive Websites Without Frameworks</h3>
+            <p class="article-date">March 5, 2025</p>
+            <p>
+              Tips and techniques for creating mobile-friendly websites using
+              vanilla CSS and best practices.
+            </p>
+          </article>
+
+          <article class="article-item">
+            <h3>JavaScript ES6+ Features Every Developer Should Know</h3>
+            <p class="article-date">February 28, 2025</p>
+            <p>
+              Explore modern JavaScript features that will improve your code
+              quality and development experience.
+            </p>
+          </article>
+        </div>
       </section>
     </main>
 
